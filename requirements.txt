@@ -1,0 +1,8 @@
+peewee
+flask
+ipython
+pymysql
+flask_admin
+wtf-peewee
+requests
+beautifulsoup4
