@@ -27,4 +27,6 @@ for i, outer in enumerate(m):
             'defend': titles[j],
             'co': in_
         })
-print(rv)
+
+for i in rv:
+    sql = 'insert '
