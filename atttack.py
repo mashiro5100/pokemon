@@ -127,8 +127,17 @@ def b_print2(result):
     print(f'弱点: {len(big)}个 {",".join(big)}')
     print(f'抗性: {len(small)}个 {",".join(small)}')
 
+import argparse
 
-attrs = ("地面", "冰", "格斗", "火")
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-a', '--attrs', help='pokemon attribute', nargs='*')
+args = parser.parse_args()
+print(args.attrs)
+
+
+attrs = args.attrs
 b_print(attack(attrs))
 print("\n\n")
 b_print2(defend(attrs))
+
